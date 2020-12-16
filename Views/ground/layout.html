@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% yield title %}</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./assets/css/style.css">
+	</head>
+	<body>
+        <ul>
+            <li><a href="{{{ URL }}}">Home</a></li>
+            <li><a href="{{{ URL }}}AboutUs">About</a></li>
+            <li><a href="{{{ URL }}}ContactUs">Contact</a></li>
+        </ul>
+    {% yield content %}
+    {% yield scripts %}
+    </body>
+</html>
