@@ -4,8 +4,8 @@
  * in the index page. Their being kept as comments because they
  * will be useful for debugging.
  *
- * include_once( './includes/classes/Route.php' );
- * include_once( './includes/classes/View.php' );
+ * include_once( 'Classes/Route.php' );
+ * include_once( 'Classes/View.php' );
  *
  * Probably shouldn't be calling the View directly from the route, should
  * be calling the controller and then allow the controller to call the route.

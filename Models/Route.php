@@ -5,7 +5,7 @@ class Route {
     * Checks if the current route is valid. Checks the route
     * against the global $Routes array.
     */
-    public function isRouteValid() {
+    public static function isRouteValid() {
         global $Routes;
         $uri = $_SERVER['REQUEST_URI'];
 
@@ -53,8 +53,6 @@ class Route {
             $closure->__invoke();
         } else if ($_GET['url'] == explode('/', $route)[0]) {
             self::registerRoute(self::dyn($route));
-            print_r($route);
-            echo "<hr>";
             $closure->__invoke();
         }
     }

@@ -9,9 +9,9 @@ class View{
     public static function make($view){
         if(Route::isRouteValid()){
             //create the view and the view controller.
-            require_once('./Controllers/'.$view.'.php');
+            require_once('Controllers/'.$view.'.php');
             //require_once('./Views/'.$view.'.php');
-            Template::view('./Views/'.$view.'.php');
+            Template::view('Views/'.$view.'.php');
             return 1;
         }
     }
